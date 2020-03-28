@@ -1,0 +1,10 @@
+$(function(){
+	$("#biyo").toggle(1);
+	$("#links").toggle(1);
+	$("#profilim").click(function(){
+		$("#biyo").toggle(1000);
+	});
+	$("#iletisim").click(function(){
+		$("#links").toggle(1000);
+	});
+});
