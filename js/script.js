@@ -3,8 +3,10 @@ $(function(){
 	$("#links").toggle(1);
 	$("#profilim").click(function(){
 		$("#biyo").toggle(1000);
+		$("#yazilar").toggle(10);
 	});
 	$("#iletisim").click(function(){
 		$("#links").toggle(1000);
+		$("#yazilar").toggle(10);
 	});
 });
