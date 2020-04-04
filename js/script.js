@@ -9,6 +9,6 @@ $(function(){
 		$("#links").toggle(1000);
 	});
 	$("#yazdostum").click(function(){
-		$("#yazilar").toggle(1);
+		$("#yazilar").toggle(1000);
 	});
 });
