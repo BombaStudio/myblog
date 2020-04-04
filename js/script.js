@@ -8,5 +8,7 @@ $(function(){
 	$("#iletisim").click(function(){
 		$("#links").toggle(1000);
 	});
-	$().click(function(){});
+	$("#yazdostum").click(function(){
+		$("#yazilar").toggle(1);
+	});
 });
