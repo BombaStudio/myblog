@@ -95,6 +95,12 @@ body {
     width: 12.83%;
     left: 60%;
     top: 9%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
 }
 .gwd-button-16zd {
     display: block;
@@ -112,8 +118,8 @@ body {
     height: 15%;
     width: 12.83%;
     opacity: 1;
-    left: 23%;
     top: 9%;
+    left: 23%;
 }
 .gwd-div-170n {
     height: 100%;
@@ -137,7 +143,6 @@ body {
     border-style: solid;
     background-image: none;
     width: 80%;
-    height: 70%;
     border-image-source: none;
     border-image-width: 1;
     border-image-outset: 0;
@@ -146,6 +151,7 @@ body {
     top: 27%;
     left: 10.67%;
     background-color: rgb(51, 94, 121);
+    height: 70%;
 }
 .gwd-rect-2pxt {
     color: rgb(255, 255, 255);
@@ -192,10 +198,10 @@ body {
     top: 27%;
     left: 10.67%;
     width: 80%;
-    height: 70%;
     transform-origin: 110.343px 76.3333px 0px;
     -webkit-transform-origin: 110.343px 76.3333px 0px;
     -moz-transform-origin: 110.343px 76.3333px 0px;
+    height: 70%;
 }
 .gwd-span-vhsqw {
     position: absolute;
@@ -218,11 +224,22 @@ body {
     top: 0%;
     left: 10.67%;
     width: 80%;
-    height: 70%;
+    height: 60%;
     transform-origin: 110.343px 76.3333px 0px;
     -webkit-transform-origin: 110.343px 76.3333px 0px;
     -moz-transform-origin: 110.343px 76.3333px 0px;
-}</style>
+}
+.metin {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+    top: 0%;
+    left: 10.67%;
+    transform-origin: 110.343px 76.3333px 0px;
+    -webkit-transform-origin: 110.343px 76.3333px 0px;
+    -moz-transform-origin: 110.343px 76.3333px 0px;
+}
+.alal {}</style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="13" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
@@ -263,6 +280,7 @@ body {
     };
     gwd.c2 = function(event) {
       //yazılar
+      document.getElementById("yaziii").innerHTML = '<div class="metin">Bugün ilk 3d projemei oluşturdum. bakmak isteyenler <a href="https://bombastudio.github.io">buraya</a> tıklayarak projeme bakabilirler.</div><br>';
     };
     gwd.c3 = function(event) {
       //iletişim
@@ -281,6 +299,7 @@ body {
       gwd.actions.events.addHandler('yazilar', 'mouseout', gwd.auto_YazilarMouseout, false);
       gwd.actions.events.addHandler('hakkımda', 'click', gwd.c1, true);
       gwd.actions.events.addHandler('iletisim', 'click', gwd.c3, false);
+      gwd.actions.events.addHandler('yazilar', 'click', gwd.c2, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('hakkımda', 'mouseover', gwd.auto_Hakk_mdaMouseover, false);
@@ -291,6 +310,7 @@ body {
       gwd.actions.events.removeHandler('yazilar', 'mouseout', gwd.auto_YazilarMouseout, false);
       gwd.actions.events.removeHandler('hakkımda', 'click', gwd.c1, true);
       gwd.actions.events.removeHandler('iletisim', 'click', gwd.c3, false);
+      gwd.actions.events.removeHandler('yazilar', 'click', gwd.c2, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -299,7 +319,6 @@ body {
 
 <body>
   <gwd-google-ad id="gwd-ad">
-    <gwd-metric-configuration></gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-33c5" data-gwd-width="100%" data-gwd-height="100%">
         <div class="gwd-page-content gwd-page-size gwd-div-170n">
