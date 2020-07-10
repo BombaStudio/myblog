@@ -1,1 +1,11 @@
-
+.appbar {
+    position: absolute;
+    width: 80%;
+    height: 25%;
+    top: -10%;
+    left: 10%;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+.appbar:hover {
+    top: 0%;
+}
