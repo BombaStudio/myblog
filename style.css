@@ -11,7 +11,7 @@
 }
 .cont {
     position: absolute;
-    background-color: grey;
+    background-color: rgba(150, 150, 150, 1);
     width: 75%;
     height: 75%;
     top: 12.5%;
