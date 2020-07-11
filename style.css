@@ -9,7 +9,7 @@
 .appbar:hover {
     top: 0%;
 }
-.cont = {
+.cont {
     position: absolute,
     background-color: grey,
     width: 75%,
