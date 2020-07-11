@@ -9,3 +9,12 @@
 .appbar:hover {
     top: 0%;
 }
+.cont = {
+    position: "absolute",
+    backgroundColor: "grey",
+    width: "75%",
+    height: "75%",
+    top: "12.5%",
+    left: "12.5%",
+    borderRadius: "15px",
+}
